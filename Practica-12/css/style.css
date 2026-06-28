@@ -1,0 +1,112 @@
+/* ==========================================================================
+   ESTILO FUTURISTA - NOCHE DE PELÍCULAS
+   ========================================================================== */
+
+:root {
+    --bg-principal: #0a0a0c;
+    --bg-tarjetas: #121216;
+    --azul-electrico: #00e5ff;
+    --azul-brillo: rgba(0, 229, 255, 0.4);
+    --texto-principal: #e0e0e6;
+    --texto-secundario: #9090a0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-principal);
+    color: var(--texto-principal);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Encabezado Principal */
+header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    width: 100%;
+    max-width: 800px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ffffff;
+    text-shadow: 0 0 10px var(--azul-brillo), 0 0 20px var(--azul-brillo);
+    border-bottom: 2px solid var(--azul-electrico);
+    padding-bottom: 1rem;
+}
+
+/* Contenedor del Menú de Navegación */
+nav {
+    background-color: var(--bg-tarjetas);
+    width: 100%;
+    max-width: 800px;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #1f1f2e;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin-bottom: 2rem;
+}
+
+nav h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--azul-electrico);
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+.menu-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* Enlaces del Menú */
+.menu-links a {
+    color: var(--texto-secundario);
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.menu-links a:hover {
+    color: #ffffff;
+    background-color: rgba(0, 229, 255, 0.1);
+    border-color: var(--azul-electrico);
+    box-shadow: 0 0 15px var(--azul-brillo);
+    transform: translateY(-2px);
+}
+
+/* Sección de Contenido */
+main {
+    width: 100%;
+    max-width: 800px;
+    background-color: var(--bg-tarjetas);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #1f1f2e;
+}
+
+p {
+    color: var(--texto-secundario);
+    line-height: 1.6;
+}
